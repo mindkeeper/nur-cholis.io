@@ -1,5 +1,5 @@
-import { useMemo } from "react";
-import { Link } from "react-router-dom";
+import { useMemo } from 'react';
+import { Link } from 'react-router-dom';
 
 function Projects() {
   const arr = useMemo(() => Array.from({ length: 5 }), []);
@@ -10,7 +10,7 @@ function Projects() {
         {arr.map((_, idx) => (
           <article
             key={idx}
-            className="my-2 transition bg-slate-500 md:group-hover:opacity-50 md:hover:!opacity-100 md:hover:scale-110"
+            className="my-2 transition bg-secondary md:group-hover:opacity-50 md:hover:!opacity-100 md:hover:scale-110"
           >
             <Link
               to="https://google.com"
