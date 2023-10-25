@@ -1,10 +1,13 @@
-import { RouterProvider } from "react-router-dom";
-import router from "./components/Router";
+import { RouterProvider } from 'react-router-dom';
+import router from './components/Router';
+import { ApolloProvider } from '@apollo/client';
+import { client } from './utils/apollo.config';
 
 function App() {
-
   return (
-      <RouterProvider router={router}/>
+    <ApolloProvider client={client}>
+      <RouterProvider router={router} />
+    </ApolloProvider>
   );
 }
 
