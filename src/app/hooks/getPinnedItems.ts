@@ -10,6 +10,7 @@ export interface PinnedItem {
   id: string;
   name: string;
   url: string;
+  description:string;
   primaryLanguage: PrimaryLanguage;
 }
 export const useGetPinnedItems = () => {
