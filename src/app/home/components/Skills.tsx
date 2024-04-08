@@ -4,11 +4,11 @@ import { useIntersectionObserver } from 'usehooks-ts';
 import { useActiveLinkStore } from '../store/activeLink';
 
 function Skills() {
-  const data = useMemo(() => Array.from({ length: 10 }), []);
+  const data = useMemo(() => Array.from({ length: 6 }), []);
 
   const { isIntersecting, ref } = useIntersectionObserver({
     threshold: 0.3,
-    initialIsIntersecting: true,
+    initialIsIntersecting: false,
   });
 
   const setActiveLink = useActiveLinkStore((state) => state.setActiveLink);
